@@ -1,0 +1,79 @@
+{
+  "products" : [
+    {
+      "id" : 1,
+      "name" : "Elang yang Semakin Menghilang",
+      "image" : "https://interaktif.kompas.id/wp-content/uploads/sites/316/2020/03/poster-elang-1024x576.jpg",
+      "price" : 50000,
+      "description" : "Kepunahan satu spesies sama saja dengan kehilangan harta hayati ...",
+      "category": "tuturvisual"
+    },
+    {
+      "id" : 2,
+      "name" : "Asyiknya Bermain",
+      "image" : "https://kompas-id.azureedge.net/wp-content/uploads/2020/02/88d25a60-e414-4412-a6d6-45d4fc41b62d_jpg-572x432.jpg",
+      "price" : 35000,
+      "description" : "Taman kota memiliki arti penting sebagai paru-paru kota sekaligus ...",
+      "category": "foto"
+    },
+    {
+      "id" : 3,
+      "name" : "Mendukung Tumbuh Kembang Anak",
+      "image" : "https://interaktif.kompas.id/wp-content/uploads/sites/316/2020/02/metropolitan-theater-of-kidzania-layered_featured-image-1920x1080-1024x576.jpg",
+      "price" : 45000,
+      "description" : "Anak mulai belajar meniru sejak lahir. Kegiatan meniru juga dikenal ...",
+      "category": "tuturvisual"
+    },
+    {
+      "id" : 4,
+      "name" : "Dari Anak Muda untuk Petani",
+      "image" : "https://images-akamai-kompas-id.azureedge.net/wp-content/uploads//2020/02/868b121b-ce68-4176-ab46-48ceb6d87d94_jpg-150x150.jpg",
+      "price" : 50000,
+      "description" : "Kepunahan satu spesies sama saja dengan kehilangan harta ...",
+      "category": "berita"
+    },
+    {
+      "id" : 5,
+      "name" : "Wawancara Khusus Kompas",
+      "image" : "https://bebas-kompas-id.azureedge.net/wp-content/uploads/sites/315/2020/03/20200302-NSW-Terjangkit-Korona-rev-mumed_1583150009.gif",
+      "price" : 40000,
+      "description" : "Saya tertekan walau bukan karena sakitnya. (Saya) sampai sekarang ...",
+      "category": "berita"
+    },
+    {
+      "id" : 6,
+      "name" : "Adu “Rasa” Kamera",
+      "image" : "https://bebas.kompas.id/wp-content/uploads/sites/315/2020/02/20200204mye34_1582538542.jpg",
+      "price" : 45000,
+      "description" : "Otak kita bekerja sangat keras meramu pencahayaan dan komposisi untuk ...",
+      "category": "foto"
+    },
+    {
+      "id" : 7,
+      "name" : "Elang yang Semakin Menghilang",
+      "image" : "https://interaktif.kompas.id/wp-content/uploads/sites/316/2020/03/poster-elang-1024x576.jpg",
+      "price" : 50000,
+      "description" : "Kepunahan satu spesies sama saja dengan kehilangan harta ...",
+      "category": "tuturvisual"
+    },
+    {
+      "id" : 8,
+      "name" : "Asyiknya Bermain",
+      "image" : "https://kompas-id.azureedge.net/wp-content/uploads/2020/02/88d25a60-e414-4412-a6d6-45d4fc41b62d_jpg-572x432.jpg",
+      "price" : 35000,
+      "description" : "Taman kota memiliki arti penting sebagai paru-paru kota sekaligus ...",
+      "category": "foto"
+    }
+  ],
+  "categories":[
+    "berita",
+    "foto",
+    "tuturvisual"
+  ],
+  "users": [
+    {
+      "name" : "admin",
+      "password" : "admin"
+    }
+  ]
+}
