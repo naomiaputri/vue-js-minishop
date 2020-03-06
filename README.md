@@ -1,5 +1,12 @@
 # aplikasi-kasir
 
+
+## Login
+```
+name : admin
+password : admin
+```
+
 ## Project setup
 ```
 yarn install
