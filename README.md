@@ -2,7 +2,7 @@
 
 ### Lints and fixes files
 ```
-name : admin,
+name : admin
 
 password : admin
 ```
