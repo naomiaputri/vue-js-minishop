@@ -22,7 +22,7 @@
 		<div class="bg-gray-100 flex w-1/3 overflow-auto" style="height: 830px;">
 			<div class="m-6 w-full">
 				<!-- button -->
-				<div class="bg-gray-150 text-gray-700 justify-start font-bold text-center p-2 rounded" @click="showBill=true"> Checkout </div>
+				<div class="bg-gray-150 text-gray-700 justify-start font-bold text-center p-2 rounded cursor-pointer" @click="showBill=true"> Checkout </div>
 				<!-- nominal -->
 				<div class="flex flex-row my-4 justify-between">
 					<div class="flex text-xl font-bold mr-4"> Total</div>
@@ -41,12 +41,12 @@
 						<div class="flex">{{ getSubTotal(card) }}</div>
 					</div>
 					<div class="flex p-2 justify-between">
-						<div class="bg-gray-150 rounded text-white p-2">
+						<div class="bg-gray-150 rounded text-white p-2 cursor-pointer">
 							Cancel
 						</div>
 						<div class="flex flex-row">
-							<div class="bg-gray-150 rounded px-4 mr-4 text-white p-2" @click="addToCarts(card)"> + </div>
-							<div class="bg-gray-150 rounded px-4 text-white p-2"> - </div>
+							<div class="bg-gray-150 rounded px-4 mr-4 text-white p-2 cursor-pointer" @click="addToCarts(card)"> + </div>
+							<div class="bg-gray-150 rounded px-4 text-white p-2 cursor-pointer"> - </div>
 						</div>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 
 
 		<!-- Payment -->
-		<div class="absolute" style="transform:translate(-50%, -50%); top:50%; left:50%;" v-if="showBill">
+		<div class="absolute modal-mask" style="transform:translate(-50%, -50%); top:50%; left:50%;" v-if="showBill">
 			<div class="bg-gray-100 mx-auto mt-48 rounded min-h-8 relative" style="width:500px; min-height: 300px;">
 				<div class="font-bold py-4 text-center text-2xl text-gray-700"> Payment </div>
 				<!-- Card -->
@@ -77,10 +77,10 @@
 
 				<!-- Button -->
 				<div class="absolute p-4 bottom-0 left-0">
-					<div class="bg-gray-50 font-bold px-4 text-gray-600 p-2" @click="remove(); showBill=false"> Print Bill </div>
+					<div class="bg-gray-50 font-bold px-4 text-gray-600 p-2 cursor-pointer" @click="remove(); showBill=false"> Print Bill </div>
 				</div>
 				<div class="absolute p-4 bottom-0 right-0">
-					<div class="bg-gray-50 font-bold px-4 text-gray-600 p-2" @click="showBill=false"> Cancel </div>
+					<div class="bg-gray-50 font-bold px-4 text-gray-600 p-2 cursor-pointer" @click="showBill=false"> Cancel </div>
 				</div>
 			</div>
 		</div>
@@ -138,3 +138,17 @@ export default {
 	}
 }
 </script>
+
+<style lang="stylus" scoped>
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #999999;
+  display: table;
+  transition: opacity 0.3s ease;
+}
+</style>

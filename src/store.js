@@ -6,12 +6,16 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({
 	state: {
+		user:{},
 		categories : [],
 		products : [],
 		carts:[],
 		activeCategories: 'all',
 	},
 	getters: {
+    setUser(state){
+      return state.user
+    },
 		getCategories(state) {
 			return state.categories 
 		},
@@ -26,6 +30,14 @@ export const store = new Vuex.Store({
 		},
 	},
 	actions: {
+		setUser({commit}){
+      axios
+        .get('http://localhost:3000/user')
+        .then(r => r.data)
+        .then(result => {
+          commit('setUser', result)
+        })      
+    },
 		fetchCategories ({commit}) {
       axios.get('http://localhost:3000/categories')
         .then(response => {
@@ -51,6 +63,9 @@ export const store = new Vuex.Store({
 		}
 	},
 	mutations: {
+		setUser(state,payload){
+      state.user = payload
+    },
 		fillCategories (state, payload) {
 			state.categories = payload
 		},

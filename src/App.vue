@@ -1,25 +1,14 @@
 <template>
   <div id="app" class="h-full">
-    <Header/>
-    <Body/>
-    <!-- <Payment/> -->
+    <router-view/>
   </div>  
 </template>
 
 <script>
 import '@/assets/css/app.styl'
-// import Payment from './components/main/Payment.vue'
-import Header from './components/main/Header.vue'
-import Body from './components/main/Body.vue'
-
 
 export default {
   name: 'App',
-  components: {
-    // Payment
-    Header,
-    Body,
-  }
 }
 </script>
 
