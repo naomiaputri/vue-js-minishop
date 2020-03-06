@@ -30,12 +30,15 @@ export default {
   },
   methods:{
     login(){
-      if(this.user.name == this.name && this.user.password == this.password){
-        this.$router.push('/')
+      if(this.setUser.name == this.name && this.setUser.password == this.password){
+        this.$router.push('/home')
       }else{
         alert('username dan password salah')
       }
     }
+  },
+  created(){
+    this.$store.dispatch('setUser')
   }
 }
 </script>

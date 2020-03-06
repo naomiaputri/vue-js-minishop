@@ -1,12 +1,5 @@
 # aplikasi-kasir
 
-### Lints and fixes files
-```
-name : admin
-
-password : admin
-```
-
 ## Project setup
 ```
 yarn install

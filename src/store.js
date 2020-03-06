@@ -32,7 +32,7 @@ export const store = new Vuex.Store({
 	actions: {
 		setUser({commit}){
       axios
-        .get('http://localhost:3000/user')
+        .get('http://localhost:3000/users')
         .then(r => r.data)
         .then(result => {
           commit('setUser', result)

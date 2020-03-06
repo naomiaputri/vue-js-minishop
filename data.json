@@ -70,10 +70,8 @@
     "foto",
     "tuturvisual"
   ],
-  "users": [
-    {
+  "users": {
       "name" : "admin",
       "password" : "admin"
     }
-  ]
 }
